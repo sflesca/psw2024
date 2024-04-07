@@ -14,11 +14,11 @@
     </tr>
     </thead>
     <tbody>
-    <jsp:useBean id="categorie" scope="request" type="java.util.List<psw.psw2024.model.Categoria>"/>
-    <c:forEach items="${categorie}" var="cat">
+    <jsp:useBean id="prodotti" scope="request" type="java.util.List<psw.psw2024.model.Prodotto>"/>
+    <c:forEach items="${prodotti}" var="prod">
         <tr>
-            <td><a href="/prodotti/bycat/${cat.id}">${cat.id}</a></td>
-            <td>${cat.nome}</td>
+            <td>${prod.id}</td>
+            <td>${prod.nome}</td>
         </tr>
     </c:forEach>
     </tbody>
