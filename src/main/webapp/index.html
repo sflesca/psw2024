@@ -3,9 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <script type="text/javascript">
+        function raddoppia(n) {
+            var res = 2 * n;
+            alert("Il doppio di " + n + " è " + res);
+        }
+    </script>
 </head>
-<body>
+<body onload="raddoppia(5)">
 <a href="categorie/viewCategorie">Categorie</a>
 <a href="prodotti/all">Prodotti</a>
+<br>
+<SCRIPT LANGUAGE="JavaScript">
+    function readText (form) {
+        t =form.inputbox.value;
+        alert ("Hai scritto: " + t);}
+
+    function writeText (form) {
+        form.inputbox.value = "prova 1!"}
+</SCRIPT>
+<FORM NAME="myform" ACTION="" METHOD="GET">
+    Enter something in the box: <BR>
+    <INPUT TYPE="text" NAME="inputbox" VALUE=""><P>
+    <INPUT TYPE="button" NAME="button1" Value="Read" onClick="readText(this.form)">
+    <INPUT TYPE="button" NAME="button2" Value="Write" onClick="writeText(this.form)">
+</FORM>
 </body>
 </html>
