@@ -17,7 +17,7 @@ public class UtilityService {
         this.prodrep = prodrep;
     }
 
-    @Transactional
+    @Transactional(rollbackFor = Exception.class)
     public void populate(){
         Categoria c = new Categoria();
         c.setNome("Elettrodomesti");
