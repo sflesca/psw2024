@@ -17,7 +17,7 @@ public class CategoriaRestController {
         this.categoriaRepository = categoriaRepository;
     }
 
-    @GetMapping("/all")
+    @GetMapping(value = "/all")
     public List<Categoria> getAllCategories() {
         return categoriaRepository.findAll();
     }
