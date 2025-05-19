@@ -8,6 +8,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/categoria")
+@CrossOrigin("*")
 public class CategoriaRestController {
 
     private CategoriaRepository categoriaRepository;
